@@ -7,8 +7,7 @@
         x:Class="TutorialTodoListApp.Views.MainWindow"
         Icon="/Assets/avalonia-logo.ico"
         Width="200" Height="300"
-        Title="TutorialTodoListApp">
-
-    <views:TodoListView/>
+        Title="TutorialTodoListApp"
+        Content="{Binding List}">
 
 </Window>
