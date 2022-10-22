@@ -6,7 +6,8 @@
              x:Class="TutorialTodoListApp.Views.TodoListView">
     <DockPanel>
         <Button DockPanel.Dock="Bottom"
-                HorizontalAlignment="Center">
+                HorizontalAlignment="Center"
+                Command="{Binding $parent[Window].DataContext.AddItem}">
             Add an item
         </Button>
         <ItemsControl Items="{Binding Items}">
